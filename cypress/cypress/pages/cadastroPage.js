@@ -3,7 +3,7 @@ class CadastroPage {
       this.nomeInput = '[data-testid="nome"]';
       this.emailInput = '[data-testid="email"]';
       this.passwordInput = '[data-testid="password"]';
-      this.confirmacaoEmailInput = '[data-testid="confirmaEmail"]'; //  Mantenha se usar confirmação de email
+      this.confirmacaoEmailInput = '[data-testid="confirmaEmail"]';
       this.adminCheckbox = '[data-testid="checkbox"]';
       this.cadastrarButton = '[data-testid="cadastrar"]';
       this.entrarLink = '[data-testid="entrar"]';
@@ -21,7 +21,7 @@ class CadastroPage {
       cy.get(this.passwordInput).type(senha);
     }
 
-    preencherCampoConfirmacaoEmail(emailConfirmacao) { // Mantenha se usar confirmação de email
+    preencherCampoConfirmacaoEmail(emailConfirmacao) {
       cy.get(this.confirmacaoEmailInput).type(emailConfirmacao);
     }
 
@@ -42,12 +42,12 @@ class CadastroPage {
     }
 
 
-    formularioCadastroVisivel() { // Função opcional - para verificar se o formulário está visível
-      cy.get('.register-page.container').should('be.visible'); // Seletor do container principal do formulário
+    formularioCadastroVisivel() {
+      cy.get('.register-page.container').should('be.visible');
     }
 
-    mensagemSucessoCadastroVisivel() { // Função para verificar mensagem de sucesso - Adapte o seletor e texto
-      cy.contains('Cadastro realizado com sucesso').should('be.visible'); // Adapte o texto da mensagem de sucesso
+    mensagemSucessoCadastroVisivel() {
+      cy.contains('Cadastro realizado com sucesso').should('be.visible'); 
     }
   }
 
