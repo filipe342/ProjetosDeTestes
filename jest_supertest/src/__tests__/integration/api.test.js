@@ -88,7 +88,7 @@ describe('Testes da API JSONPlaceholder', () => {
 
             const api = require('../../api/api');
             const response = await api.getUsers();
-            console.log('GET /users (mock 500) - Resposta:', response.status, response.body); // LOG
+            console.log('GET /users (mock 500) - Resposta:', response.status, response.body);
             expect(response.status).toBe(500);
             expect(response.body).toEqual({});
         });
