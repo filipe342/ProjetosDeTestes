@@ -1,0 +1,19 @@
+{
+  "name": "cypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  "cy:run": "cypress run",
+  "cy:report": "marge cypress/reports/mochawesome/*.json > mochawesome.json && mochawesome-report mochawesome.json"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^9.4.0",
+    "cypress": "^14.0.2",
+    "marge": "^1.0.1",
+    "mochawesome": "^7.1.3"
+  }
+}

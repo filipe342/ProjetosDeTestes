@@ -1,0 +1,18 @@
+{
+  "name": "nome-do-projeto",
+  "version": "1.0.0",
+  "description": "Testes automatizados de API com Jest e Supertest",
+  "main": "index.js",
+  "scripts": {
+    "test": "API_BASE_URL=https://jsonplaceholder.typicode.com jest --coverage",
+    "test:no-coverage": "API_BASE_URL=https://jsonplaceholder.typicode.com jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-json-schema": "^6.1.0",
+    "supertest": "^6.3.3"
+  }
+}

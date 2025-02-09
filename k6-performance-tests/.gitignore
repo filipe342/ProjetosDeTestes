@@ -1,0 +1,54 @@
+# Ignorar arquivos de sistema operacional
+Thumbs.db
+.DS_Store
+
+# Ignorar pasta de módulos do Node.js (dependências)
+node_modules/
+
+# Ignorar arquivos de log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# Ignorar arquivos de configuração local (opcional, mas recomendado)
+.env
+
+# Ignorar a pasta de relatórios de cobertura do Jest
+coverage/
+
+# Ignorar arquivos de configuração do editor/IDE (opcional, mas recomendado)
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# Ignorar arquivos de build (se aplicável)
+dist/
+build/
+
+# Arquivos temporários do sistema
+tmp/
+temp/
+
+# Arquivos gerados pelo macOS
+*.localized
+
+# Arquivos gerados pelo Windows
+[Dd]esktop.ini
+
+# Ignorar arquivos de cache do Jest (opcional)
+jest.config.cached
+/tmp
+.cache
+
+# Ignorar arquivos de saída de testes específicos (opcional, se você os tiver)
+test-results.xml
+
+# Outros arquivos gerados (adapte ao seu projeto)
+*.bak  # Arquivos de backup
+*.swp  # Arquivos temporários do Vim/Neovim
+*.orig # Arquivos de conflito de merge

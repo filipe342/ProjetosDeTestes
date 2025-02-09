@@ -1,0 +1,7 @@
+{
+    "mensagens_campos_vazios": {
+      "nome": "Nome é obrigatório",
+      "email": "Email é obrigatório",
+      "password": "Password é obrigatório"
+    }
+  }
